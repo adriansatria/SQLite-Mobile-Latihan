@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ModifyActivity"
+    tools:showIn="@layout/activity_modify">
+
+    <EditText
+        android:id="@+id/modTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:text="Title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"/>
+    <EditText
+        android:id="@+id/modDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:text="Description"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/modTitle"
+        android:layout_alignLeft="@+id/modTitle"
+        android:layout_alignStart="@id/modTitle"/>
+</RelativeLayout>
